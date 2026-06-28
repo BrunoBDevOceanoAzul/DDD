@@ -1,6 +1,8 @@
 # DDD no Node.js — Fórum Educacional
 
-Este repositório contém a implementação prática dos conceitos de **Domain-Driven Design (DDD)** e **Clean Architecture** na construção de uma API REST para um fórum educacional, desenvolvido durante o módulo de DDD da Rocketseat.
+Repositório do código das aulas de DDD da formação **Node.js** da **Rocketseat**.
+
+Este repositório contém a implementação prática dos conceitos de **Domain-Driven Design (DDD)** e **Clean Architecture** na construção de uma API REST para um fórum educacional.
 
 ## 📚 O que é DDD?
 
@@ -65,7 +67,3 @@ O projeto utiliza **Vitest** para testes unitários.
 - **Node.js** — Runtime
 - **TypeScript** — Tipagem estática
 - **Vitest** — Testes unitários
-
-## 📖 Licença
-
-Este projeto é apenas para fins educacionais.
