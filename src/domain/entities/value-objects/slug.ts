@@ -19,8 +19,7 @@ export class Slug
             .toLowerCase()
             .trim()
             .replace(/\s+/g, '-')
-            .replace(/[ˆ\w-]+/g, '-')
-            .replace(/_/g, '-')
+            .replace(/[^a-z0-9-]/g, '-')
             .replace(/--+/g, '-')
             .replace(/-$/g, '')
 

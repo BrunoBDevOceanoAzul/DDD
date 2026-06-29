@@ -1,5 +1,8 @@
 
 import { Entity } from "../../core/entities/entity.js";
+import type { UniqueEntityID } from "../../core/entities/unique-entity-id.js";
+import type { Optional } from "../../core/types/optional.js";
+
 
 
 interface StudentProps {
@@ -9,5 +12,16 @@ interface StudentProps {
 
 
 export class Student extends Entity<StudentProps> {
+
+    static create(
+        props: StudentProps,
+        id?: UniqueEntityID
+    ) {
+        const Stundent = new Student(
+            props, id);
+
+        return Stundent;
+    }
+
 
 }
