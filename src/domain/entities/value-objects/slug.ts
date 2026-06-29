@@ -1,7 +1,6 @@
-export class slug
+export class Slug
 {
     public value: string
-    static value: any;
         constructor( value: string){
         this.value = value;
         }
@@ -19,13 +18,13 @@ export class slug
             .normalize("NFKD")
             .toLowerCase()
             .trim()
-            .replace(/\s+/g, '')
+            .replace(/\s+/g, '-')
             .replace(/[ˆ\w-]+/g, '-')
             .replace(/_/g, '-')
             .replace(/--+/g, '-')
             .replace(/-$/g, '')
 
-        return new slug(slugText)
+        return new Slug(slugText)
         }
 
 }
